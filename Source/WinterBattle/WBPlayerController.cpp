@@ -1,6 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-#include "WinterBattle.h"
 #include "WBPlayerController.h"
+#include "WinterBattleCharacter.h"
 
 void AWBPlayerController::ChangeRotation()
 {
@@ -22,13 +22,13 @@ void AWBPlayerController::SetupInputComponent()
 void AWBPlayerController::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
-	if (IsChangeRotation = true)
+	if (IsChangeRotation == true)
 	{
-		/*FHitResult HitResult = FHitResult();
+		FHitResult HitResult = FHitResult();
 		GetHitResultUnderCursor(ECollisionChannel::ECC_WorldStatic, false, HitResult);
 		FVector HitLocation = HitResult.Location;
 		FVector Direction = HitLocation - GetPawn()->GetActorLocation();
 		Direction.Z = 0;
-		GetPawn()->SetActorRotation(Direction.Rotation());*/
+		GetPawn()->SetActorRotation(Direction.Rotation());
 	}
 }
