@@ -17,7 +17,8 @@ public:
 	bool IsChangeRotation = false;
 	void ChangeRotation();
 	void StopChangeRotation();
-	void ShootSnowBall();
 	
+	virtual void SetupInputComponent() override;
+	virtual void Tick(float DeltaSeconds) override;
 	
 };
