@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+	<RuntimeProperties>
+		<CrashVersion>3</CrashVersion>
+		<CrashGUID>UE4CC-Windows-0CE1248245FCE3913F9574B19BAB66CD_0000</CrashGUID>
+		<ProcessId>4140</ProcessId>
+		<IsInternalBuild>false</IsInternalBuild>
+		<IsPerforceBuild>false</IsPerforceBuild>
+		<IsSourceDistribution>false</IsSourceDistribution>
+		<IsEnsure>true</IsEnsure>
+		<IsAssert>false</IsAssert>
+		<CrashType>Ensure</CrashType>
+		<SecondsSinceStart>1139</SecondsSinceStart>
+		<GameName>UE4-WinterBattle</GameName>
+		<ExecutableName>UE4Editor</ExecutableName>
+		<BuildConfiguration>Development</BuildConfiguration>
+		<GameSessionID />
+		<PlatformName>Windows</PlatformName>
+		<PlatformNameIni>Windows</PlatformNameIni>
+		<EngineMode>Editor</EngineMode>
+		<EngineModeEx>Dirty</EngineModeEx>
+		<DeploymentName />
+		<EngineVersion>4.16.3-3561208+++UE4+Release-4.16</EngineVersion>
+		<CommandLine>&quot;E:\WinterBattle\WinterBattle\WinterBattle.uproject&quot;</CommandLine>
+		<LanguageLCID>2052</LanguageLCID>
+		<AppDefaultLocale>zh-CN</AppDefaultLocale>
+		<BuildVersion>++UE4+Release-4.16-CL-3561208</BuildVersion>
+		<IsUE4Release>true</IsUE4Release>
+		<UserName>Leo</UserName>
+		<BaseDir>D:/unreal/UE_4.16/Engine/Binaries/Win64/</BaseDir>
+		<RootDir>D:/unreal/UE_4.16/</RootDir>
+		<MachineId>4F75D1694E4A43D20CBA3CAF953440A2</MachineId>
+		<LoginId>4f75d1694e4a43d20cba3caf953440a2</LoginId>
+		<EpicAccountId>2ca875bee20444f4b61d3e00172b5480</EpicAccountId>
+		<CallStack />
+		<SourceContext />
+		<UserDescription>Sent in the unattended mode</UserDescription>
+		<UserActivityHint>Layout=&quot;AssetEditorToolkit_Toolbar&quot; Label=&quot;工具栏&quot; Content=SBorder</UserActivityHint>
+		<ErrorMessage>Ensure condition failed: false [File:D:\Build\++UE4+Release-4.16+Compile\Sync\Engine\Source\Runtime\Engine\Private\World.cpp] [Line: 1502] &nl;Could not remove actor /Engine/Transient.World_4:PersistentLevel.REINST_ThirdPersonCharacter_C_2 from world (check level is /Engine/Transient.World_4:PersistentLevel)&nl;</ErrorMessage>
+		<CrashDumpMode>0</CrashDumpMode>
+		<CrashReporterMessage />
+		<Misc.NumberOfCores>2</Misc.NumberOfCores>
+		<Misc.NumberOfCoresIncludingHyperthreads>4</Misc.NumberOfCoresIncludingHyperthreads>
+		<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+		<Misc.CPUVendor>GenuineIntel</Misc.CPUVendor>
+		<Misc.CPUBrand>Intel(R) Core(TM) i3-4170 CPU @ 3.70GHz</Misc.CPUBrand>
+		<Misc.PrimaryGPUBrand>NVIDIA GeForce GTX 960</Misc.PrimaryGPUBrand>
+		<Misc.OSVersionMajor>Windows 10</Misc.OSVersionMajor>
+		<Misc.OSVersionMinor />
+		<MemoryStats.TotalPhysical>8490856448</MemoryStats.TotalPhysical>
+		<MemoryStats.TotalVirtual>140737488224256</MemoryStats.TotalVirtual>
+		<MemoryStats.PageSize>4096</MemoryStats.PageSize>
+		<MemoryStats.TotalPhysicalGB>8</MemoryStats.TotalPhysicalGB>
+		<MemoryStats.AvailablePhysical>2620641280</MemoryStats.AvailablePhysical>
+		<MemoryStats.AvailableVirtual>140733995921408</MemoryStats.AvailableVirtual>
+		<MemoryStats.UsedPhysical>986083328</MemoryStats.UsedPhysical>
+		<MemoryStats.PeakUsedPhysical>1201459200</MemoryStats.PeakUsedPhysical>
+		<MemoryStats.UsedVirtual>2454900736</MemoryStats.UsedVirtual>
+		<MemoryStats.PeakUsedVirtual>2555031552</MemoryStats.PeakUsedVirtual>
+		<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+		<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+		<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+		<TimeOfCrash>636505326190330000</TimeOfCrash>
+		<bAllowToBeContacted>1</bAllowToBeContacted>
+		<PlatformFullName>Win64 [Windows 10  64b]</PlatformFullName>
+		<CrashReportClientVersion>1.0</CrashReportClientVersion>
+	</RuntimeProperties>
+	<PlatformProperties>
+		<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+		<PlatformCallbackResult>0</PlatformCallbackResult>
+	</PlatformProperties>
+</FGenericCrashContext>
