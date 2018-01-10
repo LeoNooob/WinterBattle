@@ -17,3 +17,6 @@
 #ifndef WINTERBATTLE_WinterBattleGameMode_generated_h
 	#include "WinterBattleGameMode.h"
 #endif
+#ifndef WINTERBATTLE_WinterBattlePlayerController_generated_h
+	#include "WinterBattlePlayerController.h"
+#endif

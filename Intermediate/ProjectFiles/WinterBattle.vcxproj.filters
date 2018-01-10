@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\WinterBattle.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{02BB3A2B-95D5-4967-8C44-AF613515A685}</UniqueIdentifier>
+			<UniqueIdentifier>{6A13E0A2-8595-4511-9647-C1D57D07607F}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\WinterBattle.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{C574CCC9-E969-4A06-9BC0-804F72C6C5EB}</UniqueIdentifier>
+			<UniqueIdentifier>{787EE553-53AF-45E0-8817-EA5DD06C8AA3}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\WinterBattle">
-			<UniqueIdentifier>{3B3DD548-CD15-4F31-8923-7C2C9C4F993F}</UniqueIdentifier>
+			<UniqueIdentifier>{91A16A97-9E16-47C1-AE8D-00FBE953D81C}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\WinterBattle\WBAIController.cpp">
 			<Filter>Source\WinterBattle</Filter>

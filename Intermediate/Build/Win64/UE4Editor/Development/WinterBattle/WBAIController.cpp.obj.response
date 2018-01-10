@@ -23,9 +23,9 @@
 /wd4838
 /w44668
 /I D:\unreal\UE_4.16\Engine\Source
-/I E:\WinterBattle\WinterBattle\Source
-/I E:\WinterBattle\WinterBattle\Intermediate\Build\Win64\UE4Editor\Inc\WinterBattle
-/I E:\WinterBattle\WinterBattle\Source\WinterBattle
+/I E:\WinterBattle\WinterBattle0\Source
+/I E:\WinterBattle\WinterBattle0\Intermediate\Build\Win64\UE4Editor\Inc\WinterBattle
+/I E:\WinterBattle\WinterBattle0\Source\WinterBattle
 /I D:\unreal\UE_4.16\Engine\Source\Runtime\Core\Public
 /I D:\unreal\UE_4.16\Engine\Source\Runtime\Core\Public\Internationalization
 /I D:\unreal\UE_4.16\Engine\Source\Runtime\Core\Public\Async
@@ -317,9 +317,9 @@
 /FI"D:\unreal\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Yu"D:\unreal\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Fp"D:\unreal\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"E:\WinterBattle\WinterBattle\Source\WinterBattle\WBAIController.cpp"
-/FI"E:\WinterBattle\WinterBattle\Intermediate\Build\Win64\UE4Editor\Development\WinterBattle\Definitions.WinterBattle.h"
-/Fo"E:\WinterBattle\WinterBattle\Intermediate\Build\Win64\UE4Editor\Development\WinterBattle\WBAIController.cpp.obj"
+"E:\WinterBattle\WinterBattle0\Source\WinterBattle\WBAIController.cpp"
+/FI"E:\WinterBattle\WinterBattle0\Intermediate\Build\Win64\UE4Editor\Development\WinterBattle\Definitions.WinterBattle.h"
+/Fo"E:\WinterBattle\WinterBattle0\Intermediate\Build\Win64\UE4Editor\Development\WinterBattle\WBAIController.cpp.obj"
 /TP
 /GR-
 /W4
