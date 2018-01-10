@@ -30,8 +30,6 @@ void EmptyLinkFunctionForGeneratedCode1WinterBattle() {}
 	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWinterBattleCharacter();
 	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWinterBattleGameMode_NoRegister();
 	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWinterBattleGameMode();
-	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWinterBattlePlayerController_NoRegister();
-	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWinterBattlePlayerController();
 	WINTERBATTLE_API class UPackage* Z_Construct_UPackage__Script_WinterBattle();
 	void AWBAIController::StaticRegisterNativesAWBAIController()
 	{
@@ -210,44 +208,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	IMPLEMENT_CLASS(AWinterBattleGameMode, 4166428364);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWinterBattleGameMode(Z_Construct_UClass_AWinterBattleGameMode, &AWinterBattleGameMode::StaticClass, TEXT("/Script/WinterBattle"), TEXT("AWinterBattleGameMode"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWinterBattleGameMode);
-	void AWinterBattlePlayerController::StaticRegisterNativesAWinterBattlePlayerController()
-	{
-	}
-	UClass* Z_Construct_UClass_AWinterBattlePlayerController_NoRegister()
-	{
-		return AWinterBattlePlayerController::StaticClass();
-	}
-	UClass* Z_Construct_UClass_AWinterBattlePlayerController()
-	{
-		static UClass* OuterClass = NULL;
-		if (!OuterClass)
-		{
-			Z_Construct_UClass_ACharacter();
-			Z_Construct_UPackage__Script_WinterBattle();
-			OuterClass = AWinterBattlePlayerController::StaticClass();
-			if (!(OuterClass->ClassFlags & CLASS_Constructed))
-			{
-				UObjectForceRegistration(OuterClass);
-				OuterClass->ClassFlags |= 0x20900080;
-
-
-				static TCppClassTypeInfo<TCppClassTypeTraits<AWinterBattlePlayerController> > StaticCppClassTypeInfo;
-				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
-				OuterClass->StaticLink();
-#if WITH_METADATA
-				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
-				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
-				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("WinterBattlePlayerController.h"));
-				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("WinterBattlePlayerController.h"));
-#endif
-			}
-		}
-		check(OuterClass->GetClass());
-		return OuterClass;
-	}
-	IMPLEMENT_CLASS(AWinterBattlePlayerController, 3602909428);
-	static FCompiledInDefer Z_CompiledInDefer_UClass_AWinterBattlePlayerController(Z_Construct_UClass_AWinterBattlePlayerController, &AWinterBattlePlayerController::StaticClass, TEXT("/Script/WinterBattle"), TEXT("AWinterBattlePlayerController"), false, nullptr, nullptr, nullptr);
-	DEFINE_VTABLE_PTR_HELPER_CTOR(AWinterBattlePlayerController);
 	UPackage* Z_Construct_UPackage__Script_WinterBattle()
 	{
 		static UPackage* ReturnPackage = nullptr;
@@ -256,8 +216,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/WinterBattle")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x3B5363EC;
-			Guid.B = 0x1361262B;
+			Guid.A = 0x6845C60B;
+			Guid.B = 0xE1310E16;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

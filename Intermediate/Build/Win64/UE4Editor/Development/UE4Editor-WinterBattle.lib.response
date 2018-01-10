@@ -7,6 +7,8 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "D:\unreal\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"E:\WinterBattle\WinterBattle\Intermediate\Build\Win64\UE4Editor\Development\WinterBattle\WBAIController.cpp.obj"
+"E:\WinterBattle\WinterBattle\Intermediate\Build\Win64\UE4Editor\Development\WinterBattle\WBPlayerController.cpp.obj"
 "E:\WinterBattle\WinterBattle\Intermediate\Build\Win64\UE4Editor\Development\WinterBattle\WinterBattle.cpp.obj"
 "E:\WinterBattle\WinterBattle\Intermediate\Build\Win64\UE4Editor\Development\WinterBattle\WinterBattleCharacter.cpp.obj"
 "E:\WinterBattle\WinterBattle\Intermediate\Build\Win64\UE4Editor\Development\WinterBattle\WinterBattleGameMode.cpp.obj"

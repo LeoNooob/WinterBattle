@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define WINTERBATTLE_WBPlayerController_generated_h
 
-#define WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_RPC_WRAPPERS
-#define WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_INCLASS_NO_PURE_DECLS \
+#define WinterBattle_Source_WinterBattle_WBPlayerController_h_15_RPC_WRAPPERS
+#define WinterBattle_Source_WinterBattle_WBPlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define WinterBattle_Source_WinterBattle_WBPlayerController_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWBPlayerController(); \
 	friend WINTERBATTLE_API class UClass* Z_Construct_UClass_AWBPlayerController(); \
@@ -25,7 +25,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_INCLASS \
+#define WinterBattle_Source_WinterBattle_WBPlayerController_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesAWBPlayerController(); \
 	friend WINTERBATTLE_API class UClass* Z_Construct_UClass_AWBPlayerController(); \
@@ -35,7 +35,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_STANDARD_CONSTRUCTORS \
+#define WinterBattle_Source_WinterBattle_WBPlayerController_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AWBPlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AWBPlayerController) \
@@ -48,7 +48,7 @@ private: \
 public:
 
 
-#define WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_ENHANCED_CONSTRUCTORS \
+#define WinterBattle_Source_WinterBattle_WBPlayerController_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AWBPlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -61,32 +61,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWBPlayerController); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AWBPlayerController)
 
 
-#define WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_PRIVATE_PROPERTY_OFFSET
-#define WinterBattle0_Source_WinterBattle_WBPlayerController_h_12_PROLOG
-#define WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_GENERATED_BODY_LEGACY \
+#define WinterBattle_Source_WinterBattle_WBPlayerController_h_15_PRIVATE_PROPERTY_OFFSET
+#define WinterBattle_Source_WinterBattle_WBPlayerController_h_12_PROLOG
+#define WinterBattle_Source_WinterBattle_WBPlayerController_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_PRIVATE_PROPERTY_OFFSET \
-	WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_RPC_WRAPPERS \
-	WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_INCLASS \
-	WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_STANDARD_CONSTRUCTORS \
+	WinterBattle_Source_WinterBattle_WBPlayerController_h_15_PRIVATE_PROPERTY_OFFSET \
+	WinterBattle_Source_WinterBattle_WBPlayerController_h_15_RPC_WRAPPERS \
+	WinterBattle_Source_WinterBattle_WBPlayerController_h_15_INCLASS \
+	WinterBattle_Source_WinterBattle_WBPlayerController_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_GENERATED_BODY \
+#define WinterBattle_Source_WinterBattle_WBPlayerController_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_PRIVATE_PROPERTY_OFFSET \
-	WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_INCLASS_NO_PURE_DECLS \
-	WinterBattle0_Source_WinterBattle_WBPlayerController_h_15_ENHANCED_CONSTRUCTORS \
+	WinterBattle_Source_WinterBattle_WBPlayerController_h_15_PRIVATE_PROPERTY_OFFSET \
+	WinterBattle_Source_WinterBattle_WBPlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	WinterBattle_Source_WinterBattle_WBPlayerController_h_15_INCLASS_NO_PURE_DECLS \
+	WinterBattle_Source_WinterBattle_WBPlayerController_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID WinterBattle0_Source_WinterBattle_WBPlayerController_h
+#define CURRENT_FILE_ID WinterBattle_Source_WinterBattle_WBPlayerController_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
