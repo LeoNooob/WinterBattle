@@ -1,70 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup>
-		<None Include="..\..\WinterBattle.uproject" />
-		<Filter Include="Source">
-			<UniqueIdentifier>{6A13E0A2-8595-4511-9647-C1D57D07607F}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Source\WinterBattle.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<None Include="..\..\Source\WinterBattleEditor.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<Filter Include="Config">
-			<UniqueIdentifier>{787EE553-53AF-45E0-8817-EA5DD06C8AA3}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Config\DefaultEditor.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultEngine.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultGame.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultInput.ini">
-			<Filter>Config</Filter>
-		</None >
-		<Filter Include="Source\WinterBattle">
-			<UniqueIdentifier>{91A16A97-9E16-47C1-AE8D-00FBE953D81C}</UniqueIdentifier>
-		</Filter>
-		<ClCompile Include="..\..\Source\WinterBattle\WBAIController.cpp">
-			<Filter>Source\WinterBattle</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\WinterBattle\WBAIController.h">
-			<Filter>Source\WinterBattle</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\WinterBattle\WBPlayerController.cpp">
-			<Filter>Source\WinterBattle</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\WinterBattle\WBPlayerController.h">
-			<Filter>Source\WinterBattle</Filter>
-		</ClInclude >
-		<None Include="..\..\Source\WinterBattle\WinterBattle.Build.cs">
-			<Filter>Source\WinterBattle</Filter>
-		</None >
-		<ClCompile Include="..\..\Source\WinterBattle\WinterBattle.cpp">
-			<Filter>Source\WinterBattle</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\WinterBattle\WinterBattle.h">
-			<Filter>Source\WinterBattle</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\WinterBattle\WinterBattleCharacter.cpp">
-			<Filter>Source\WinterBattle</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\WinterBattle\WinterBattleCharacter.h">
-			<Filter>Source\WinterBattle</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\WinterBattle\WinterBattleGameMode.cpp">
-			<Filter>Source\WinterBattle</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\WinterBattle\WinterBattleGameMode.h">
-			<Filter>Source\WinterBattle</Filter>
-		</ClInclude >
-	</ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\WinterBattle.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{6A13E0A2-8595-4511-9647-C1D57D07607F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\WinterBattle.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\WinterBattleEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{787EE553-53AF-45E0-8817-EA5DD06C8AA3}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\WinterBattle">
+      <UniqueIdentifier>{91A16A97-9E16-47C1-AE8D-00FBE953D81C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\WinterBattle\WBAIController.cpp">
+      <Filter>Source\WinterBattle</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WinterBattle\WBAIController.h">
+      <Filter>Source\WinterBattle</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WinterBattle\WBPlayerController.cpp">
+      <Filter>Source\WinterBattle</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WinterBattle\WBPlayerController.h">
+      <Filter>Source\WinterBattle</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\WinterBattle\WinterBattle.Build.cs">
+      <Filter>Source\WinterBattle</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\WinterBattle\WinterBattle.cpp">
+      <Filter>Source\WinterBattle</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WinterBattle\WinterBattle.h">
+      <Filter>Source\WinterBattle</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WinterBattle\WinterBattleCharacter.cpp">
+      <Filter>Source\WinterBattle</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WinterBattle\WinterBattleCharacter.h">
+      <Filter>Source\WinterBattle</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WinterBattle\WinterBattleGameMode.cpp">
+      <Filter>Source\WinterBattle</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WinterBattle\WinterBattleGameMode.h">
+      <Filter>Source\WinterBattle</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\WinterBattle\WBWeapon.h">
+      <Filter>Source\WinterBattle</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\WinterBattle\WBWeapon.cpp">
+      <Filter>Source\WinterBattle</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

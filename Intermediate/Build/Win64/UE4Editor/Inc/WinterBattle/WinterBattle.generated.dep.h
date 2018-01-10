@@ -11,6 +11,9 @@
 #ifndef WINTERBATTLE_WBPlayerController_generated_h
 	#include "WBPlayerController.h"
 #endif
+#ifndef WINTERBATTLE_WBWeapon_generated_h
+	#include "WBWeapon.h"
+#endif
 #ifndef WINTERBATTLE_WinterBattleCharacter_generated_h
 	#include "WinterBattleCharacter.h"
 #endif
