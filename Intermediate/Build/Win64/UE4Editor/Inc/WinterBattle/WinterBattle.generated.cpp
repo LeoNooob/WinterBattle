@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCode1WinterBattle() {}
 	AIMODULE_API class UClass* Z_Construct_UClass_AAIController();
 	ENGINE_API class UClass* Z_Construct_UClass_APlayerController();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
+	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
@@ -132,6 +133,9 @@ void EmptyLinkFunctionForGeneratedCode1WinterBattle() {}
 				OuterClass->ClassFlags |= 0x20900080;
 
 
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_WeaponMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("WeaponMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(WeaponMesh, AWBWeapon), 0x00100000000a001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				static TCppClassTypeInfo<TCppClassTypeTraits<AWBWeapon> > StaticCppClassTypeInfo;
 				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
 				OuterClass->StaticLink();
@@ -139,13 +143,17 @@ void EmptyLinkFunctionForGeneratedCode1WinterBattle() {}
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("WBWeapon.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("WBWeapon.h"));
+				MetaData->SetValue(NewProp_WeaponMesh, TEXT("Category"), TEXT("Character"));
+				MetaData->SetValue(NewProp_WeaponMesh, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_WeaponMesh, TEXT("ModuleRelativePath"), TEXT("WBWeapon.h"));
+				MetaData->SetValue(NewProp_WeaponMesh, TEXT("ToolTip"), TEXT("Sets a weapon mesh"));
 #endif
 			}
 		}
 		check(OuterClass->GetClass());
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWBWeapon, 488310543);
+	IMPLEMENT_CLASS(AWBWeapon, 1875009972);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWBWeapon(Z_Construct_UClass_AWBWeapon, &AWBWeapon::StaticClass, TEXT("/Script/WinterBattle"), TEXT("AWBWeapon"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWBWeapon);
 	void AWinterBattleCharacter::StaticRegisterNativesAWinterBattleCharacter()
@@ -256,7 +264,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/WinterBattle")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xB8DF2293;
+			Guid.A = 0x361D530D;
 			Guid.B = 0x87E1D9C7;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

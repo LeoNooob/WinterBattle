@@ -51,7 +51,6 @@ Global
 		{F59B0C95-F0CD-4E4E-99A9-99E6E1285469}.Development|HTML5.ActiveCfg = BuiltWithUnrealBuildTool|Win32
 		{F59B0C95-F0CD-4E4E-99A9-99E6E1285469}.Development|HTML5.Build.0 = BuiltWithUnrealBuildTool|Win32
 		{F59B0C95-F0CD-4E4E-99A9-99E6E1285469}.Development|Win32.ActiveCfg = BuiltWithUnrealBuildTool|Win32
-		{F59B0C95-F0CD-4E4E-99A9-99E6E1285469}.Development|Win32.Build.0 = BuiltWithUnrealBuildTool|Win32
 		{F59B0C95-F0CD-4E4E-99A9-99E6E1285469}.Development|Win64.ActiveCfg = BuiltWithUnrealBuildTool|Win32
 		{F59B0C95-F0CD-4E4E-99A9-99E6E1285469}.Development|Win64.Build.0 = BuiltWithUnrealBuildTool|Win32
 		{F59B0C95-F0CD-4E4E-99A9-99E6E1285469}.Shipping|HTML5.ActiveCfg = BuiltWithUnrealBuildTool|Win32
@@ -74,10 +73,10 @@ Global
 		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development Editor|Win32.ActiveCfg = Development_Editor|Win32
 		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development Editor|Win64.ActiveCfg = Development_Editor|x64
 		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development Editor|Win64.Build.0 = Development_Editor|x64
-		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|HTML5.ActiveCfg = Development_Game|Win32
-		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|HTML5.Build.0 = Development_Game|Win32
-		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|Win32.ActiveCfg = Development_Game|Win32
-		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|Win32.Build.0 = Development_Game|Win32
+		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|HTML5.ActiveCfg = HTML5_Development_Game|Win32
+		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|HTML5.Build.0 = HTML5_Development_Game|Win32
+		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|Win32.ActiveCfg = Development_Editor|x64
+		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|Win32.Build.0 = Development_Editor|x64
 		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|Win64.ActiveCfg = Development_Game|x64
 		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|Win64.Build.0 = Development_Game|x64
 		{C30D17D4-874E-437F-8A3D-200A79D97660}.Shipping|HTML5.ActiveCfg = HTML5_Shipping_Game|Win32
