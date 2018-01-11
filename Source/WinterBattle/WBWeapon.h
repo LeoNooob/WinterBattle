@@ -22,6 +22,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	// Sets a weapon mesh 
+	UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly)
 	UStaticMeshComponent* WeaponMesh;
 	
 };

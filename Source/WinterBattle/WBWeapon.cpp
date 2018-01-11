@@ -3,6 +3,7 @@
 #include "WBWeapon.h"
 
 
+
 // Sets default values
 AWBWeapon::AWBWeapon()
 {
@@ -25,4 +26,3 @@ void AWBWeapon::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-
