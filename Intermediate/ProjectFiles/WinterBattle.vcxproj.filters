@@ -70,9 +70,15 @@
     <ClInclude Include="..\..\Source\WinterBattle\WBWeapon.h">
       <Filter>Source\WinterBattle</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\WinterBattle\Projectile.h">
+      <Filter>Source\WinterBattle</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\WinterBattle\WBWeapon.cpp">
+      <Filter>Source\WinterBattle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\WinterBattle\Projectile.cpp">
       <Filter>Source\WinterBattle</Filter>
     </ClCompile>
   </ItemGroup>
