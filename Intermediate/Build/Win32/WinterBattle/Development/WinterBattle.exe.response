@@ -80,6 +80,7 @@
 /NODEFAULTLIB:"atlsn"
 /NODEFAULTLIB:"atlsnd"
 "D:\unreal\UE_4.16\Engine\Intermediate\Build\Win32\UE4\Development\Engine\SharedPCH.Engine.h.obj"
+"E:\WinterBattle\WinterBattle\Intermediate\Build\Win32\WinterBattle\Development\WinterBattle\Projectile.cpp.obj"
 "E:\WinterBattle\WinterBattle\Intermediate\Build\Win32\WinterBattle\Development\WinterBattle\WBAIController.cpp.obj"
 "E:\WinterBattle\WinterBattle\Intermediate\Build\Win32\WinterBattle\Development\WinterBattle\WBPlayerController.cpp.obj"
 "E:\WinterBattle\WinterBattle\Intermediate\Build\Win32\WinterBattle\Development\WinterBattle\WBWeapon.cpp.obj"

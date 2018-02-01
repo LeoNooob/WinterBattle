@@ -20,6 +20,7 @@ void AWBPlayerController::SetupInputComponent()
 	//when the button is released, character stop to change the rotation.
 	InputComponent->BindAction("ChangePlayerRotation", EInputEvent::IE_Pressed, this, &AWBPlayerController::ChangeRotation);
 	InputComponent->BindAction("ChangePlayerRotation", EInputEvent::IE_Released, this, &AWBPlayerController::StopChangeRotation);
+	//InputComponent->BindAction("Fire", EInputEvent::IE_Pressed, this, &AWBPlayerController::CallFire);
 }
 
 void AWBPlayerController::Tick(float DeltaSeconds)

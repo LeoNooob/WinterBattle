@@ -420,10 +420,10 @@
     <ClInclude Include="..\..\Source\WinterBattle\WBAIController.h" />
     <ClCompile Include="..\..\Source\WinterBattle\WBPlayerController.cpp" />
     <ClInclude Include="..\..\Source\WinterBattle\WBPlayerController.h" />
-    <None Include="..\..\Source\WinterBattle\WinterBattle.Build.cs" />
     <ClCompile Include="..\..\Source\WinterBattle\WBWeapon.cpp" />
-    <ClCompile Include="..\..\Source\WinterBattle\WinterBattle.cpp" />
     <ClInclude Include="..\..\Source\WinterBattle\WBWeapon.h" />
+    <None Include="..\..\Source\WinterBattle\WinterBattle.Build.cs" />
+    <ClCompile Include="..\..\Source\WinterBattle\WinterBattle.cpp" />
     <ClInclude Include="..\..\Source\WinterBattle\WinterBattle.h" />
     <ClCompile Include="..\..\Source\WinterBattle\WinterBattleCharacter.cpp" />
     <ClInclude Include="..\..\Source\WinterBattle\WinterBattleCharacter.h" />

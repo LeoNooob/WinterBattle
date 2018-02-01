@@ -5,12 +5,13 @@
 
 // Sets default values
 AProjectile::AProjectile()
+	:Super()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 	CollisionComponent = CreateDefaultSubobject<USphereComponent>(TEXT("Collision"));
-	RootComponent = CollisionComponent;
+	CollisionComponent->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned

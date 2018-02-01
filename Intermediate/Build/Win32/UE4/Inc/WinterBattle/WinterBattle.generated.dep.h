@@ -5,6 +5,9 @@
 ===========================================================================*/
 
 #include "GeneratedCppIncludes.h"
+#ifndef WINTERBATTLE_Projectile_generated_h
+	#include "Projectile.h"
+#endif
 #ifndef WINTERBATTLE_WBAIController_generated_h
 	#include "WBAIController.h"
 #endif

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\WinterBattle.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{6A13E0A2-8595-4511-9647-C1D57D07607F}</UniqueIdentifier>
+      <UniqueIdentifier>{42DA03A9-03C0-4DC4-9C0C-69B66BE87E16}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\WinterBattle.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{787EE553-53AF-45E0-8817-EA5DD06C8AA3}</UniqueIdentifier>
+      <UniqueIdentifier>{798F40B2-FD97-460E-BC17-23DBD3131A24}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\WinterBattle">
-      <UniqueIdentifier>{91A16A97-9E16-47C1-AE8D-00FBE953D81C}</UniqueIdentifier>
+      <UniqueIdentifier>{99F53DA4-3979-4461-98BE-10B82DACA762}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\WinterBattle\WBAIController.cpp">
       <Filter>Source\WinterBattle</Filter>
@@ -42,6 +42,12 @@
       <Filter>Source\WinterBattle</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\WinterBattle\WBPlayerController.h">
+      <Filter>Source\WinterBattle</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WinterBattle\WBWeapon.cpp">
+      <Filter>Source\WinterBattle</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WinterBattle\WBWeapon.h">
       <Filter>Source\WinterBattle</Filter>
     </ClInclude>
     <None Include="..\..\Source\WinterBattle\WinterBattle.Build.cs">
@@ -67,17 +73,11 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\WinterBattle\WBWeapon.h">
-      <Filter>Source\WinterBattle</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\WinterBattle\Projectile.h">
       <Filter>Source\WinterBattle</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\WinterBattle\WBWeapon.cpp">
-      <Filter>Source\WinterBattle</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\WinterBattle\Projectile.cpp">
       <Filter>Source\WinterBattle</Filter>
     </ClCompile>

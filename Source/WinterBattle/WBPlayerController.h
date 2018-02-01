@@ -24,5 +24,6 @@ public:
 	virtual void SetupInputComponent() override;
 	// Override the Tick(float DeltaSeconds) function in PlayerController.h
 	virtual void Tick(float DeltaSeconds) override;
+
 	
 };

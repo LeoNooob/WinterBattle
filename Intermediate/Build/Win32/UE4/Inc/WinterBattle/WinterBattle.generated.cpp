@@ -15,15 +15,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1WinterBattle() {}
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
+	ENGINE_API class UClass* Z_Construct_UClass_AActor();
+	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	AIMODULE_API class UClass* Z_Construct_UClass_AAIController();
 	ENGINE_API class UClass* Z_Construct_UClass_APlayerController();
-	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
 
+	WINTERBATTLE_API class UClass* Z_Construct_UClass_AProjectile_NoRegister();
+	WINTERBATTLE_API class UClass* Z_Construct_UClass_AProjectile();
 	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWBAIController_NoRegister();
 	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWBAIController();
 	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWBPlayerController_NoRegister();
@@ -35,6 +38,49 @@ void EmptyLinkFunctionForGeneratedCode1WinterBattle() {}
 	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWinterBattleGameMode_NoRegister();
 	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWinterBattleGameMode();
 	WINTERBATTLE_API class UPackage* Z_Construct_UPackage__Script_WinterBattle();
+	void AProjectile::StaticRegisterNativesAProjectile()
+	{
+	}
+	UClass* Z_Construct_UClass_AProjectile_NoRegister()
+	{
+		return AProjectile::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AProjectile()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_WinterBattle();
+			OuterClass = AProjectile::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_CollisionComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CollisionComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CollisionComponent, AProjectile), 0x00100000000a001d, Z_Construct_UClass_USphereComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				static TCppClassTypeInfo<TCppClassTypeTraits<AProjectile> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Projectile.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Projectile.h"));
+				MetaData->SetValue(NewProp_CollisionComponent, TEXT("Category"), TEXT("Projectile"));
+				MetaData->SetValue(NewProp_CollisionComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_CollisionComponent, TEXT("ModuleRelativePath"), TEXT("Projectile.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(AProjectile, 2076188613);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AProjectile(Z_Construct_UClass_AProjectile, &AProjectile::StaticClass, TEXT("/Script/WinterBattle"), TEXT("AProjectile"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AProjectile);
 	void AWBAIController::StaticRegisterNativesAWBAIController()
 	{
 	}
@@ -264,8 +310,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/WinterBattle")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x361D530D;
-			Guid.B = 0x87E1D9C7;
+			Guid.A = 0xDF15BBD4;
+			Guid.B = 0x6BB6BA34;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
