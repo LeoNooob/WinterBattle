@@ -16,6 +16,7 @@ void EmptyLinkFunctionForGeneratedCode1WinterBattle() {}
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
+	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	AIMODULE_API class UClass* Z_Construct_UClass_AAIController();
 	ENGINE_API class UClass* Z_Construct_UClass_APlayerController();
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
@@ -32,6 +33,7 @@ void EmptyLinkFunctionForGeneratedCode1WinterBattle() {}
 	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWBPlayerController();
 	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWBWeapon_NoRegister();
 	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWBWeapon();
+	WINTERBATTLE_API class UFunction* Z_Construct_UFunction_AWinterBattleCharacter_Fire();
 	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWinterBattleCharacter_NoRegister();
 	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWinterBattleCharacter();
 	WINTERBATTLE_API class UClass* Z_Construct_UClass_AWinterBattleGameMode_NoRegister();
@@ -58,6 +60,9 @@ void EmptyLinkFunctionForGeneratedCode1WinterBattle() {}
 				OuterClass->ClassFlags |= 0x20900080;
 
 
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_CollisionComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CollisionComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CollisionComponent, AProjectile), 0x00100000000a001d, Z_Construct_UClass_USphereComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				static TCppClassTypeInfo<TCppClassTypeTraits<AProjectile> > StaticCppClassTypeInfo;
 				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
 				OuterClass->StaticLink();
@@ -65,13 +70,16 @@ void EmptyLinkFunctionForGeneratedCode1WinterBattle() {}
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Projectile.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Projectile.h"));
+				MetaData->SetValue(NewProp_CollisionComponent, TEXT("Category"), TEXT("Projectile"));
+				MetaData->SetValue(NewProp_CollisionComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_CollisionComponent, TEXT("ModuleRelativePath"), TEXT("Projectile.h"));
 #endif
 			}
 		}
 		check(OuterClass->GetClass());
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AProjectile, 3237901086);
+	IMPLEMENT_CLASS(AProjectile, 2076188613);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AProjectile(Z_Construct_UClass_AProjectile, &AProjectile::StaticClass, TEXT("/Script/WinterBattle"), TEXT("AProjectile"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AProjectile);
 	void AWBAIController::StaticRegisterNativesAWBAIController()
@@ -195,8 +203,30 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	IMPLEMENT_CLASS(AWBWeapon, 1875009972);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWBWeapon(Z_Construct_UClass_AWBWeapon, &AWBWeapon::StaticClass, TEXT("/Script/WinterBattle"), TEXT("AWBWeapon"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWBWeapon);
+	static FName NAME_AWinterBattleCharacter_Fire = FName(TEXT("Fire"));
+	void AWinterBattleCharacter::Fire()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AWinterBattleCharacter_Fire),NULL);
+	}
 	void AWinterBattleCharacter::StaticRegisterNativesAWinterBattleCharacter()
 	{
+	}
+	UFunction* Z_Construct_UFunction_AWinterBattleCharacter_Fire()
+	{
+		UObject* Outer=Z_Construct_UClass_AWinterBattleCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Fire"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08020800, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Character"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WinterBattleCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AWinterBattleCharacter_NoRegister()
 	{
@@ -215,13 +245,17 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20800080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_AWinterBattleCharacter_Fire());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_MaxHealth = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MaxHealth"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(MaxHealth, AWinterBattleCharacter), 0x0010000000020005);
+				UProperty* NewProp_Health = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Health"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(Health, AWinterBattleCharacter), 0x0010000000020005);
 				UProperty* NewProp_BaseLookUpRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("BaseLookUpRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(BaseLookUpRate, AWinterBattleCharacter), 0x0010000000020015);
 				UProperty* NewProp_BaseTurnRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("BaseTurnRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(BaseTurnRate, AWinterBattleCharacter), 0x0010000000020015);
 				UProperty* NewProp_FollowCamera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FollowCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(FollowCamera, AWinterBattleCharacter), 0x00400000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 				UProperty* NewProp_CameraBoom = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraBoom"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CameraBoom, AWinterBattleCharacter), 0x00400000000a001d, Z_Construct_UClass_USpringArmComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AWinterBattleCharacter_Fire(), "Fire"); // 1861937103
 				OuterClass->ClassConfigName = FName(TEXT("Game"));
 				static TCppClassTypeInfo<TCppClassTypeTraits<AWinterBattleCharacter> > StaticCppClassTypeInfo;
 				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
@@ -231,6 +265,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("WinterBattleCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("WinterBattleCharacter.h"));
+				MetaData->SetValue(NewProp_MaxHealth, TEXT("Category"), TEXT("Character"));
+				MetaData->SetValue(NewProp_MaxHealth, TEXT("ModuleRelativePath"), TEXT("WinterBattleCharacter.h"));
+				MetaData->SetValue(NewProp_Health, TEXT("Category"), TEXT("Character"));
+				MetaData->SetValue(NewProp_Health, TEXT("ModuleRelativePath"), TEXT("WinterBattleCharacter.h"));
 				MetaData->SetValue(NewProp_BaseLookUpRate, TEXT("Category"), TEXT("Camera"));
 				MetaData->SetValue(NewProp_BaseLookUpRate, TEXT("ModuleRelativePath"), TEXT("WinterBattleCharacter.h"));
 				MetaData->SetValue(NewProp_BaseLookUpRate, TEXT("ToolTip"), TEXT("Base look up/down rate, in deg/sec. Other scaling may affect final rate."));
@@ -253,7 +291,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		check(OuterClass->GetClass());
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWinterBattleCharacter, 1250847604);
+	IMPLEMENT_CLASS(AWinterBattleCharacter, 176203526);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWinterBattleCharacter(Z_Construct_UClass_AWinterBattleCharacter, &AWinterBattleCharacter::StaticClass, TEXT("/Script/WinterBattle"), TEXT("AWinterBattleCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWinterBattleCharacter);
 	void AWinterBattleGameMode::StaticRegisterNativesAWinterBattleGameMode()
@@ -303,8 +341,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/WinterBattle")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xB94E5AD4;
-			Guid.B = 0x6BB6BA34;
+			Guid.A = 0x3A027BF7;
+			Guid.B = 0xECF5EB96;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

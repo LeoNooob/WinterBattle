@@ -20,7 +20,7 @@ void AWBPlayerController::SetupInputComponent()
 	//when the button is released, character stop to change the rotation.
 	InputComponent->BindAction("ChangePlayerRotation", EInputEvent::IE_Pressed, this, &AWBPlayerController::ChangeRotation);
 	InputComponent->BindAction("ChangePlayerRotation", EInputEvent::IE_Released, this, &AWBPlayerController::StopChangeRotation);
-	//InputComponent->BindAction("Fire", EInputEvent::IE_Pressed, this, &AWBPlayerController::CallFire);
+	InputComponent->BindAction("Fire", EInputEvent::IE_Pressed, this, &AWBPlayerController::CallFire);
 }
 
 void AWBPlayerController::Tick(float DeltaSeconds)
@@ -40,5 +40,14 @@ void AWBPlayerController::Tick(float DeltaSeconds)
 		Direction.Z = 0;
 		//Rotate the character according to the vector.
 		GetPawn()->SetActorRotation(Direction.Rotation());
+	}
+}
+
+void AWBPlayerController::CallFire()
+{
+	AWinterBattleCharacter* character = dynamic_cast<AWinterBattleCharacter*>(GetControlledPawn());
+	if (IsValid(character))
+	{
+		character->Fire();
 	}
 }

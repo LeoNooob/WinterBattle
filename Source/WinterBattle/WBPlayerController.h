@@ -25,5 +25,6 @@ public:
 	// Override the Tick(float DeltaSeconds) function in PlayerController.h
 	virtual void Tick(float DeltaSeconds) override;
 
+	virtual void CallFire();
 	
 };

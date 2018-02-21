@@ -45,6 +45,8 @@ AWinterBattleCharacter::AWinterBattleCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+
+	Health = MaxHealth;
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -71,11 +73,9 @@ void AWinterBattleCharacter::SetupPlayerInputComponent(class UInputComponent* Pl
 	// handle touch devices
 	PlayerInputComponent->BindTouch(IE_Pressed, this, &AWinterBattleCharacter::TouchStarted);
 	PlayerInputComponent->BindTouch(IE_Released, this, &AWinterBattleCharacter::TouchStopped);
-
 	// VR headset functionality
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AWinterBattleCharacter::OnResetVR);
 }
-
 
 void AWinterBattleCharacter::OnResetVR()
 {

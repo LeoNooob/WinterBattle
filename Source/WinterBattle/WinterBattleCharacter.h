@@ -29,6 +29,11 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category=Character)
+		INT32 Health;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Character)
+		INT32 MaxHealth = 100;
+
 protected:
 
 	/** Resets HMD orientation in VR. */
@@ -69,6 +74,7 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
-	
+	UFUNCTION(Category = "Character", BlueprintImplementableEvent)
+		void Fire();
 };
 

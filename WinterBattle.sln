@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2020
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{CBE8DD39-49A0-4A19-91DF-08E04706CB20}"
 EndProject
@@ -78,8 +78,8 @@ Global
 		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|HTML5.Build.0 = HTML5_Development_Game|Win32
 		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|Win32.ActiveCfg = Development_Game|Win32
 		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|Win32.Build.0 = Development_Game|Win32
-		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|Win64.ActiveCfg = Development_Game|x64
-		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|Win64.Build.0 = Development_Game|x64
+		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|Win64.ActiveCfg = Development_Game|Win32
+		{C30D17D4-874E-437F-8A3D-200A79D97660}.Development|Win64.Build.0 = Development_Game|Win32
 		{C30D17D4-874E-437F-8A3D-200A79D97660}.Shipping|HTML5.ActiveCfg = HTML5_Shipping_Game|Win32
 		{C30D17D4-874E-437F-8A3D-200A79D97660}.Shipping|HTML5.Build.0 = HTML5_Shipping_Game|Win32
 		{C30D17D4-874E-437F-8A3D-200A79D97660}.Shipping|Win32.ActiveCfg = Shipping_Game|Win32
