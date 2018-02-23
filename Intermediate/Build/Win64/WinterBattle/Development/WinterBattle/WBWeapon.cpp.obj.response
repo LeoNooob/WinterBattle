@@ -22,6 +22,7 @@
 /w44668
 /I D:\unreal\UE_4.16\Engine\Source
 /I E:\WinterBattle\WinterBattle\Source
+/I E:\WinterBattle\WinterBattle\Intermediate\Build\Win64\UE4\Inc\WinterBattle
 /I E:\WinterBattle\WinterBattle\Source\WinterBattle
 /I D:\unreal\UE_4.16\Engine\Source\Runtime\Core\Public
 /I D:\unreal\UE_4.16\Engine\Source\Runtime\Core\Public\Internationalization

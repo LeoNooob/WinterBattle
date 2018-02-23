@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\WinterBattle.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{42DA03A9-03C0-4DC4-9C0C-69B66BE87E16}</UniqueIdentifier>
+      <UniqueIdentifier>{3FA9F08B-C7E0-4CE3-993F-04B8DDD573D4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\WinterBattle.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{798F40B2-FD97-460E-BC17-23DBD3131A24}</UniqueIdentifier>
+      <UniqueIdentifier>{262C94BB-AB1B-4FD3-A62F-FDEFB5A96F0C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +30,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\WinterBattle">
-      <UniqueIdentifier>{99F53DA4-3979-4461-98BE-10B82DACA762}</UniqueIdentifier>
+      <UniqueIdentifier>{1F03136A-4BE9-487D-A067-DC0B720AC4F7}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\WinterBattle\Projectile.cpp">
+      <Filter>Source\WinterBattle</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WinterBattle\Projectile.h">
+      <Filter>Source\WinterBattle</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\WinterBattle\WBAIController.cpp">
       <Filter>Source\WinterBattle</Filter>
     </ClCompile>
@@ -73,12 +79,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\WinterBattle\Projectile.h">
+    <ClInclude Include="..\..\Source\WinterBattle\InventoryManager.h">
       <Filter>Source\WinterBattle</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\WinterBattle\Projectile.cpp">
+    <ClCompile Include="..\..\Source\WinterBattle\InventoryManager.cpp">
       <Filter>Source\WinterBattle</Filter>
     </ClCompile>
   </ItemGroup>

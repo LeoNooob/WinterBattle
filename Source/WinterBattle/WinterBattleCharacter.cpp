@@ -1,6 +1,7 @@
 // Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
 
 #include "WinterBattleCharacter.h"
+#include "InventoryManager.h"
 #include "Kismet/HeadMountedDisplayFunctionLibrary.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -47,6 +48,7 @@ AWinterBattleCharacter::AWinterBattleCharacter()
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 
 	Health = MaxHealth;
+	InventoryManager = NewObject<UInventoryManager>();
 }
 
 //////////////////////////////////////////////////////////////////////////

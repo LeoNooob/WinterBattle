@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "InventoryManager.h"
 #include "WinterBattleCharacter.generated.h"
 
 UCLASS(config=Game)
@@ -33,6 +34,13 @@ public:
 		INT32 Health;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Character)
 		INT32 MaxHealth = 100;
+
+	/*
+	 New Frame for multi-Weapon System
+	*/
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Character)
+		UInventoryManager* InventoryManager;
+
 
 protected:
 

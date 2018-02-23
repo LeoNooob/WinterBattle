@@ -414,9 +414,11 @@
     <None Include="..\..\Config\DefaultEngine.ini" />
     <None Include="..\..\Config\DefaultGame.ini" />
     <None Include="..\..\Config\DefaultInput.ini" />
+    <ClCompile Include="..\..\Source\WinterBattle\InventoryManager.cpp" />
     <ClCompile Include="..\..\Source\WinterBattle\Projectile.cpp" />
-    <ClCompile Include="..\..\Source\WinterBattle\WBAIController.cpp" />
+    <ClInclude Include="..\..\Source\WinterBattle\InventoryManager.h" />
     <ClInclude Include="..\..\Source\WinterBattle\Projectile.h" />
+    <ClCompile Include="..\..\Source\WinterBattle\WBAIController.cpp" />
     <ClInclude Include="..\..\Source\WinterBattle\WBAIController.h" />
     <ClCompile Include="..\..\Source\WinterBattle\WBPlayerController.cpp" />
     <ClInclude Include="..\..\Source\WinterBattle\WBPlayerController.h" />
